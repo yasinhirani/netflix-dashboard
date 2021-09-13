@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Netflix Dashboard</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper d-flex w-100 h-100 overflow-hidden bg-primary">
+        <aside class="sidebar bg-primary d-flex flex-column border-right border-gray-800">
+            <h2 class="mb-0 text-white p-4">Netflix<span class="text-danger">.</span></h2>
+            <div class="flex-grow-1 overflow-vertical">
+            <p class="mb-0 text-gray-600 px-4 font-xs">Menu</p>
+            <ul class="nav flex-column pt-3">
+                <li class="nav-item py-1"><a class="nav-link px-4 py-2 d-flex align-items-center active" href="#"><span class="fa fa-compass font-icon d-flex justify-content-center align-items-center"></span><span class="pl-2">Browser</span></a></li>
+                <li class="nav-item py-1"><a class="nav-link px-4 py-2 d-flex align-items-center" href="#"><span class="fa fa-heart-o font-icon d-flex justify-content-center align-items-center"></span><span class="pl-2">Watchlist</span></a></li>
+                <li class="nav-item py-1"><a class="nav-link px-4 py-2 d-flex align-items-center" href="#"><span class="fa fa-calendar font-icon d-flex justify-content-center align-items-center"></span><span class="pl-2">Coming soon</span></a></li>
+            </ul>
+            <p class="mb-0 text-gray-600 px-4 font-xs pt-4">Social</p>
+            <ul class="nav flex-column pt-3">
+                <li class="nav-item py-1"><a class="nav-link px-4 py-2 d-flex align-items-center" href="#"><span class="fa fa-user-o font-icon d-flex justify-content-center align-items-center"></span><span class="pl-2">Friend</span></a></li>
+                <li class="nav-item py-1"><a class="nav-link px-4 py-2 d-flex align-items-center" href="#"><span class="fa fa-users font-icon d-flex justify-content-center align-items-center"></span><span class="pl-2">Parties</span></a></li>
+            </ul>
+            <p class="mb-0 text-gray-600 px-4 font-xs pt-4">General</p>
+            <ul class="nav flex-column pt-3">
+                <li class="nav-item py-1"><a class="nav-link px-4 py-2 d-flex align-items-center" href="#"><span class="fa fa-cog font-icon d-flex justify-content-center align-items-center"></span><span class="pl-2">Settings</span></a></li>
+                <li class="nav-item py-1"><a class="nav-link px-4 py-2 d-flex align-items-center" href="#"><span class="fa fa-sign-out font-icon d-flex justify-content-center align-items-center"></span><span class="pl-2">Logout</span></a></li>
+            </ul>
+        </div>
+        <div class="bg-primary-dark p-3 rounded mx-3 my-3">
+            <p class="mb-0 text-white font-weight-medium text-center">Popcorn Addict</p>
+            <p class="mb-0 text-white text-center font-xs text-gray-600">4/6h vewing time</p>
+            <button class="btn btn-primary w-100 rounded py-2 mt-3 font-xs font-weight-medium">View Challenges</button>
+        </div>
+        </aside>
+        <main class="flex-grow-1 d-flex flex-column">
+            <header class="p-4 d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <span class="fa fa-angle-left text-white font-xl px-2"></span>
+                    <span class="fa fa-angle-right text-gray-600 font-xl px-2"></span>
+                    <div class="search rounded px-3 py-1 d-flex align-items-center">
+                        <label class="mb-0" for="search"><span class="fa fa-search text-gray-600 pr-2"></span></label>
+                        <input type="search" class="search-bar bg-transparent border-0 p-1 rounded" name="search" id="search" placeholder="Search...">
+                        <span class="fa fa-lightbulb-o text-gray-600 pr-2 cursor-pointer"></span>
+                    </div>
+                </div>
+                <div class="profile d-flex align-items-center position-relative">
+                    <span class="fa fa-bell-o text-white px-3 font-lg"></span>
+                    <span class="fa fa-commenting-o text-white pl-2 pr-4 font-lg"></span>
+                    <div id="arc"></div>
+                    <figure class="mb-0 avatar-img rounded-circle overflow-hidden">
+                        <img src="assets/images/avatar.jpg" alt="">
+                    </figure>
+                    <div class="pl-3">
+                        <p class="mb-0 text-white font-sm">Ramon F.</p>
+                        <p class="mb-0 font-xs text-gray-600">Level 12</p>
+                    </div>
+                </div>
+            </header>
+            <div class="flex-grow-1 overflow-vertical px-4">
+                <div class="main-wrapper py-3">
+                    <input class="form-check-input cust-input-1" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <input class="form-check-input cust-input-2" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked>
+                    <input class="form-check-input cust-input-3" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                <div class="hero-banner rounded" id="hero-banner">
+                    <div class="sub-banner w-100 h-100 d-flex flex-column justify-content-between p-5">
+                        <div class="banner-top d-flex align-items-center">
+                            <span class="badge badge-secondary">40XP</span>
+                            <div class="images d-flex align-items-center pl-4">
+                                <figure class="banner-img mb-0 rounded-circle overflow-hidden">
+                                    <img src="assets/images/avatar.jpg" alt="">
+                                </figure>
+                                <figure class="banner-img mb-0 rounded-circle overflow-hidden">
+                                    <img src="assets/images/avatar.jpg" alt="">
+                                </figure>
+                                <figure class="banner-img mb-0 rounded-circle overflow-hidden">
+                                    <img src="assets/images/avatar.jpg" alt="">
+                                </figure>
+                            </div>
+                            <p class="mb-0 text-white font-xs pl-3 font-weight-normal text-gray-200">+5 friends are watching</p>
+                        </div>
+                        <div class="banner-bottom">
+                            <h1 class="mb-3 text-white">Bladerunner 2049</h1>
+                            <p class="mb-0 font-weight-normal text-gray-200">98% Match</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center pt-4">
+                                    <button class="btn btn-danger rounded px-4 mr-3">Watch</button>
+                                    <button class="btn btn-gray-700 rounded px-3 text-white"><span class="fa fa-plus"></span></button>
+                                </div>
+                                <div class="images-list">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label cust-label-1 text-gray-600" for="inlineRadio1"><img class="banner-image rounded" name="img2" src="assets/images/img2.jpg" alt=""></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <label class="form-check-label cust-label-2 text-gray-600" for="inlineRadio2"><img class="banner-image rounded" name="img1" src="assets/images/img1.jpg" alt=""></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <label class="form-check-label cust-label-3 text-gray-600" for="inlineRadio3"><img class="banner-image rounded" name="img3" src="assets/images/img3.jpg" alt=""></label>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="parties d-flex align-items-center py-4">
+                    <h3 class="mb-0 text-white">Parties</h3>
+                    <div class="progress bg-gray-800 w-25 ml-3">
+                        <div class="progress-bar w-0" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="bg-primary-dark"><p class="text-white">Lorem ipsum dolor sit amet.</p></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="bg-primary-dark"><p class="text-white">Lorem ipsum dolor sit amet.</p></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="bg-primary-dark"><p class="text-white">Lorem ipsum dolor sit amet.</p></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="bg-primary-dark"><p class="text-white">Lorem ipsum dolor sit amet.</p></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

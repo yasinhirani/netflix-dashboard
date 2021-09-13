@@ -1,0 +1,108 @@
+.container-fluid {
+    padding: 2rem;
+}
+
+@each $color, $value in $theme-colors {
+    @include square-color($color, $value);
+}
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 500;
+    flex-shrink: 0;
+}
+.square-sm {
+    width: 40px;
+    height: 40px;
+}
+.square-md {
+    width: 48px;
+    height: 48px;
+}
+.square-lg {
+    width: 60px;
+    height: 60px;
+}
+// .progress {
+//     .progress-bar {
+//         border-radius: $progress-bar-border-radius;
+//     }
+// }
+.hero-banner{
+    width: 100%;
+    height: 350px;
+    .sub-banner{
+        background-color: rgba(0,0,0,.1);
+    }
+}
+.banner-img{
+    width: 25px;
+    height: 25px;
+    &:not(:first-child){
+        margin-left: -4px;
+    }
+    img{
+        width: 100%;
+    }
+}
+.banner-image{
+    width: 80px;
+    height: 50px;
+}
+.cust-input-1{
+    &:checked{
+        ~ .hero-banner{
+            animation: fadeIn 2s;
+            background-image: url("../../../assets/images/img2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
+    }
+}
+.cust-input-2{
+    &:checked{
+        ~ .hero-banner{
+            animation: fadeIn1 2s;
+            background-image: url("../../../assets/images/img1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+.cust-input-3{
+    &:checked{
+        ~ .hero-banner{
+            animation: fadeIn2 2s;
+            background-image: url("../../../assets/images/img3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeIn1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeIn2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
